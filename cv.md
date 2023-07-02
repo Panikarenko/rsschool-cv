@@ -1,10 +1,15 @@
 # CV
 
 Name: Daryna
+
 Surname: Panikarenko
+
 Phone number: 722704980
+
 Email: danya.panikarenko@gmail.com
+
 Telegram: @D_artagnanna
+
 Discord: darynapanikarenko
 
 ## About me:
