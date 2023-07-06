@@ -7,5 +7,241 @@
     <title>CV</title>
 </head>
 <body>
+    <header class="header">
+        <div class="header-wrapper">
+            <h2 class="header-capture">CV</h2>
+            <nav class="header-nav">
+                <ul class="nav-list-wrapper">
+                    <li><a href="#about" class="page-link">About</a></li>
+                    <li><a href="#skills" class="page-link">Skills</a></li>
+                    <li><a href="#languages" class="page-link">Languages</a></li>
+                    <li><a href="#education" class="page-link">Education</a></li>
+                    <li><a href="#work" class="page-link">Work</a></li>
+                    <li><a href="#code" class="page-link">Code</a></li>
+                    <li><a href="#projects" class="page-link">Projects</a></li>
+                    <li><a href="#contact" class="page-link">Contact</a></li>
+                    <li><a href="#address" class="page-link">Address</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="main">
+        <div class="image-block">
+            <section class="location">
+                <div class="contact-section-wrapper">
+                    <figure class="icon-wrapper">
+                        <img class="address-icon icon" src="./img/iconizer-location.svg" alt="address icon">
+                    </figure>
+                    <h3 id="address">
+                        Address
+                    </h3>
+                </div>
+                <p>
+                    Poland, Poznan
+                </p>
+            </section>
+            <figure class="image-wrapper">
+                <img class="my-pic" src="./img/my_pic.png" alt="A photo of the author">
+            </figure>
+            <section class="contact">
+                <h2 id="contact">
+                    Contact
+                </h2>
+                <ul class="contact-wrapper">
+                    <li>
+                        <div class="contact-section-wrapper">
+                            <figure class="icon-wrapper">
+                                <img class="phone-icon icon" src="./img/iconizer-phone3.svg" alt="Phone icon">
+                            </figure>
+                            <h3>
+                                Phone
+                            </h3>
+                        </div>
+                        <p>
+                            +48 722 704 980
+                        </p>
+                    </li>
+                    <li>
+                        <div class="contact-section-wrapper">
+                            <figure class="icon-wrapper">
+                                <img class="email-icon icon" src="./img/iconizer-mail2.svg" alt="Email icon">
+                            </figure>
+                            <h3>
+                                Email
+                            </h3>
+                        </div>
+                        <p>
+                            danya.panikarenko@gmail.com
+                        </p>
+                    </li>
+                    <li>
+                        <div class="contact-section-wrapper">
+                            <figure class="icon-wrapper">
+                                <img class="telegram-icon icon" src="./img/iconizer-telegram.svg" alt="Telegram icon">
+                            </figure>
+                            <h3>
+                                Telegram
+                            </h3>
+                        </div>
+                        <p>
+                            @D_artagnanna
+                        </p>
+                    </li>
+                    <li>
+                        <div class="contact-section-wrapper">
+                            <figure class="icon-wrapper">
+                                <img class="discord-icon icon" src="./img/iconizer-discord.svg" alt="Discird icon">
+                            </figure>
+                            <h3>
+                                Discord
+                            </h3>
+                        </div>
+                        <p>
+                            darynapanikarenko
+                        </p>
+                    </li>
+                </ul>
+            </section>
+            <section class="languages">
+                <h2 id="languages">
+                    Languages
+                </h2>
+                <ul class="language-list-wrapper">
+                    <li>English-<span class="lang-level">B1</span></li>
+                    <li>Ukrainian-<span class="lang-level">C1</span></li>
+                    <li>Russian-<span class="lang-level">C1</span></li>
+                    <li>Polish-<span class="lang-level">B2</span></li>
+                </ul>
+            </section>
+        </div>
+        <div class="info-block">
+            <div class="introduction">
+                <h1 class="my-name">
+                    Daryna<br>Panikarenko
+                </h1>
+                <p class="introduction-desc">
+                    Front-End Developer
+                </p>
+            </div>
+            <section class="about-me">
+                <h2 class="info-block-h" id="about">
+                    About me
+                </h2>
+                <p>
+                    I am a student studying computer science. I love coding and I want to become a professional front-end developer!
+                </p>
+            </section>
+            <section class="education">
+                <h2 class="info-block-h" id="education">
+                    Education
+                </h2>
+                <ul class="education-desc">
+                    <li>
+                        <p class="education-date">
+                            2021-2023
+                        </p>
+                        <p class="education-place">
+                            Medicus,
+                        </p>
+                        <p class="education-course">
+                            Assistant director of film and television production
+                        </p>
+                    </li>
+                    <li>
+                        <p class="education-date">
+                            2022-now
+                        </p>
+                        <p class="education-place">
+                            Adam Mickiewicz University,
+                        </p>
+                        <p class="education-course">
+                            Computer Science
+                        </p>
+                     </li>
+                </ul>
+            </section>
+            <section class="work-experience">
+                <h2 class="info-block-h" id="work">
+                    Work Expirience
+                </h2>
+                <ul>
+                    <li>
+                        <h3 class="work-title">Сall center operator</h3>
+                        <div class="worc-desc-title-wrapper">
+                            <p class="work-date">
+                                2022-2022
+                            </p>
+                            <p class="work-name">
+                                VIA VOX GROUP SPÓŁKA AKCYJNA / Poznan
+                            </p>
+                        </div>
+                        <p class="work-desc">
+                            I was helping clients to use the company's services and solve problems.
+                        </p>
+                    </li>
+                </ul>
+            </section>
+            <section class="code-example">
+                <h2 class="info-block-h" id="code">Code Example</h2>
+                <pre class="code">
+const currentDate=document.querySelector(".current-date"),
+prevNextIcon=document.querySelectorAll(".icons span"),
+button=document.querySelector(".inst-button"),
+infoWrapper=document.querySelector(".info-wrapper"),
+daysTag=document.querySelector(".days");
+button.addEventListener("click", () => {
+if (infoWrapper.classList.contains('info-inactive')){
+infoWrapper.classList.remove('info-inactive');
+button.textContent ="Hide: instrukcje do sprzątania";
+}</pre>
+            </section>
+            <section class="projects">
+                <h2 class="info-block-h" id="projects">Projects</h2>
+                <ul class="project-name-list">
+                    <li><a class="project-name" href="https://panikarenko.github.io/Schedule-for-my-flat/">Duty schedule</a></li>
+                </ul>
+            </section>
+            <section class="skills">
+                <h2 class="info-block-h" id="skills">
+                    Skills
+                </h2>
+                <ul class="skills-items-wrap">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Git</li>
+                    <li class="html-skill">
+                        <div class="html-bar">
+                        </div>
+                        80%
+                    </li>
+                    <li class="css-skill">
+                        <div class="css-bar">
+                        </div>
+                        35%
+                    </li>
+                    <li class="js-skill">
+                        <div class="js-bar">
+                        </div>
+                        20%
+                    </li>
+                    <li class="git-skill">
+                        <div class="git-bar">
+                        </div>
+                       25%
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </main>
+    <footer class="footer">
+        <section class="footer-links-wrapper">
+            <a class="rs-school-wrapper" href="https://rs.school/js/">
+                <img class="rs-school-logo" src="./img/iconizer-rs_school_js2.svg" alt="rs school logo">
+            </a>
+            <h3 class="year">2023</h3>
+            <a class="my-github-link" href="https://github.com/Panikarenko"><img class="my-github-logo" src="./img/iconizer-github.svg" alt="github logo"></a>
+        </section>
+    </footer>
 </body>
 </html>
