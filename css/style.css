@@ -1,0 +1,478 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style-type: none;
+}
+
+@font-face {
+    font-display: swap;
+    font-family: 'Averia Serif Libre';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/averia-serif-libre-v16-latin-300.woff2') format('woff2');
+}
+
+  @font-face {
+    font-display: swap;
+    font-family: 'Averia Serif Libre';
+    font-style: italic;
+    font-weight: 300;
+    src: url('../fonts/averia-serif-libre-v16-latin-300italic.woff2') format('woff2');
+}
+
+  @font-face {
+    font-display: swap;
+    font-family: 'Averia Serif Libre';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/averia-serif-libre-v16-latin-regular.woff2') format('woff2');
+}
+
+  @font-face {
+    font-display: swap;
+    font-family: 'Averia Serif Libre';
+    font-style: italic;
+    font-weight: 400;
+    src: url('../fonts/averia-serif-libre-v16-latin-italic.woff2') format('woff2');
+}
+
+  @font-face {
+    font-display: swap;
+    font-family: 'Averia Serif Libre';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/averia-serif-libre-v16-latin-700.woff2') format('woff2');
+}
+
+  @font-face {
+    font-display: swap;
+    font-family: 'Averia Serif Libre';
+    font-style: italic;
+    font-weight: 700;
+    src: url('../fonts/averia-serif-libre-v16-latin-700italic.woff2') format('woff2');
+}
+
+.header {
+    height: 50px;
+    box-shadow: 0 -40px 30px 15px rgba(0, 0, 0, .3);
+}
+
+.header-capture {
+    color: rgb(145, 84, 146);
+}
+
+.header-wrapper,
+.nav-list-wrapper {
+    display: flex;
+    height: 50px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.header-wrapper {
+    width: 750px;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.nav-list-wrapper li {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    margin-right: 7px;
+}
+
+.page-link {
+    color: rgb(255, 179, 0);
+    text-decoration: none;
+}
+
+.page-link:hover {
+    color: rgb(145, 84, 146, 0.5);
+}
+
+.nav-list-wrapper li:last-child {
+    margin-right: 0;
+}
+
+.main {
+    min-height: 100vh;
+    box-shadow: 40px 0px 40px -40px rgba(0, 0, 0, .3), -40px 0px 40px -40px rgba(0, 0, 0, .3);
+}
+
+.main,
+.header {
+    font-family: 'Averia Serif Libre';
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 0 70px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.image-block {
+    background: linear-gradient(0deg, rgba(69,222,207,0.24) 0%, rgba(234,149,245,0.24) 100%);
+    max-width: 250px;
+}
+
+.image-wrapper {
+    width: 250px;
+}
+
+.my-pic {
+    max-width: 100%;
+    object-fit: cover;
+    pointer-events: none;
+}
+
+.image-wrapper::before,
+.image-wrapper::after {
+    position: relative;
+    top: 17px;
+    content: ' ';
+    display: block;
+    width: 250px;
+    height: 20px;
+    background-color: rgb(162, 122, 206);
+}
+
+.image-wrapper::after {
+    top: -10px;
+}
+
+.location {
+    padding: 20px 25px 3px;
+    font-size: 11px;
+    line-height: 20px;
+}
+
+h3 {
+    color: rgb(145, 84, 146);
+}
+
+.languages {
+    margin: 0 25px;
+}
+
+.languages h2 {
+    color: rgb(255, 179, 0);
+    letter-spacing: 5px;
+}
+
+.contact {
+    padding: 18px 25px;
+}
+
+.contact h2 {
+    color: rgb(255, 179, 0);
+    letter-spacing: 5px;
+}
+
+.contact-wrapper {
+    margin-top: 15px;
+    font-size: 11px;
+    line-height: 20px;
+}
+
+.contact-wrapper p {
+    margin-bottom: 5px;
+}
+
+.contact-section-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.icon {
+    object-fit: cover;
+}
+
+.icon-wrapper {
+    margin-right: 5px;
+}
+
+.phone-icon {
+    width: 25px;
+    height: 25px;
+}
+
+.email-icon {
+    width: 30px;
+    height: 18px;
+}
+
+.telegram-icon {
+    width:  25px;
+    height: 22px;
+}
+
+.discord-icon {
+    width: 25px;
+    height: 20px;
+}
+
+.address-icon {
+    width:  15px;
+    height: 15px;
+}
+
+.language-list-wrapper {
+    margin-top: 15px;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.lang-level {
+    color: rgb(145, 84, 146);
+}
+
+.info-block {
+    margin-left: 35px;
+    max-width: 325px;
+}
+
+.my-name {
+    margin-top: 20px;
+    font-size: 35px;
+    letter-spacing: 3px;
+    color: rgb(162, 122, 206);
+}
+
+.my-name::after {
+    margin-top: 5px;
+    content: '';
+    display: block;
+    background-color: rgb(255, 179, 0);
+    width: 40px;
+    height: 2px;
+}
+
+.introduction-desc {
+    margin-top: 8px;
+    letter-spacing: 2.5px;
+    color: rgb(145, 84, 146);
+}
+
+.about-me {
+    margin-top: 45px;
+}
+
+.info-block-h {
+    font-size: 20px;
+    color: rgb(255, 179, 0);
+    letter-spacing: 2px;
+}
+
+.about-me p {
+    margin-top: 10px;
+    font-size: 11px;
+}
+
+.education {
+    margin-top: 30px;
+}
+
+.education ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.education-desc {
+    margin-top: 20px;
+    display: flex;
+}
+
+.education-place,
+.education-date,
+.education-course {
+    text-align: center;
+}
+
+.education-desc li {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.education-date {
+    font-size: 15px;
+    background-color: rgb(162, 122, 206);
+    border-radius: 300px;
+    width: 100px;
+    color: white;
+}
+
+.education-place {
+    margin-top: 5px;
+    font-size: 15px;
+    color: rgb(145, 84, 146);
+}
+
+.education-course {
+    margin-top: 7px;
+    font-size: 11px;
+}
+
+.work-experience {
+    margin-top: 29px;
+}
+
+.worc-desc-title-wrapper {
+    margin-top: 7px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 11px;
+}
+
+.work-date {
+    text-align: center;
+    margin-right: 10px;
+    background-color: rgb(162, 122, 206);
+    padding: 3px 0;
+    color: white;
+    border-radius: 300px;
+    width: 70px;
+}
+
+.work-name {
+    color: rgb(162, 122, 206);
+    font-weight: bold;
+    align-self: center;
+}
+
+.work-desc {
+    margin-top: 9px;
+    font-size: 11px;
+}
+
+.work-title {
+    margin-top: 15px;
+    font-size: 15px;
+}
+
+.code {
+    color: rgb(80, 80, 80);
+    margin-top: 14px;
+    font-size: 11px;
+}
+
+.code-example h2 {
+    margin-top: 25px;
+}
+
+.projects {
+    margin-top: 25px;
+}
+
+.project-name-list {
+    margin-top: 5px;
+}
+
+.project-name {
+    text-decoration: none;
+    color: rgb(162, 122, 206);
+}
+
+.project-name:hover {
+    color: rgb(255, 179, 0);
+}
+
+.skills {
+    margin-bottom: 50px;
+}
+
+.skills h2 {
+    margin-top: 25px;
+}
+
+.skills-items-wrap {
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+    text-align: center;
+    color: rgb(145, 84, 146);
+}
+
+.html-skill,
+.css-skill,
+.js-skill,
+.git-skill {
+    background-color: rgba(69,222,207,0.24);
+    border-radius: 300px;
+    color: rgb(145, 84, 146);
+}
+
+.html-bar,
+.css-bar,
+.js-bar,
+.git-bar {
+    background-color: rgb(255, 179, 0);
+    border-radius: 300px;
+    height: 100%;
+}
+
+.html-bar {
+    width: 80%;
+}
+
+.css-bar {
+    width: 35%;
+}
+
+.js-bar {
+    width: 20%;
+}
+
+.git-bar {
+    width: 25%;
+}
+
+.footer {
+    margin: 0 auto;
+    width: 750px;
+    height: 60px;
+    box-shadow: 0 40px 30px 15px rgba(0, 0, 0, .3);
+}
+
+.footer-links-wrapper {
+    height: 60px;
+    margin: 0 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rs-school-wrapper {
+    padding-top: 7px;
+}
+
+.rs-school-logo {
+    max-width: 70px;
+    object-fit: cover;
+}
+
+.my-github-link {
+    max-width: 35px;
+}
+
+.my-github-logo {
+    object-fit: cover;
+    max-width: 35px;
+}
+
+.year {
+    font-size: 25px;
+    text-align: center;
+}
+
+.rs-school-logo:hover,
+.my-github-logo:hover {
+    opacity: 0.7;
+}
